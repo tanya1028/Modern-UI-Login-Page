@@ -1,0 +1,60 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+include('login.php') ?>
+    <!doctype html>
+    <html>
+
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+
+    <body>
+        <div class="form">
+            <h2>Login</h2>
+            <div class="input">
+                <form method="post" action="login.php">
+                    <div class="inputbox">
+                        <label>Username</label>
+                        <input type="text" name="username" placeholder="example">
+                    </div>
+                    <div class="inputbox">
+                        <label>Password</label>
+                        <input type="password" name="password_1" placeholder="***">
+                    </div>
+                    <br>
+                    <!--<div class="g-recaptcha" data-sitekey="6LeHPuMaAAAAAGoR3n5GBnOqA6rFCtFFU-qcuiVQ">
+                    </div>-->
+                    <div class="inputbox">
+                        <input type="submit" name="reg_user" value="Sign In">
+                    </div>
+            </div>
+        </div>
+    </body>
+
+    <!--<body>
+        <div class="header">
+            <h2 align="center">Login</h2>
+        </div>
+
+        <form method="post" action="login.php">
+            <div class="input-group" align="center">
+                <label>Username</label>
+                <input type="text" name="username">
+
+            </div>
+            <div class="input-group" align="center">
+                <label>Password</label>
+                <input type="password" name="password_1">
+            </div>
+            <div>
+                <div class="g-recaptcha" data-sitekey="6LeHPuMaAAAAAGoR3n5GBnOqA6rFCtFFU-qcuiVQ" align="center"></div>
+                <div class="input-group" align="center">
+                    <button type="submit" class="btn" name="reg_user">Register</button>
+                </div>
+        </form>
+    </body>-->
+
+    </html>
